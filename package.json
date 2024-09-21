@@ -2,9 +2,10 @@
   "name": "ky-puzzle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "exports": "./index.js",
+  "type": "module",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "node --import ./ts-loader.js index.ts"
   },
   "author": "",
   "license": "UNLICENSED",
